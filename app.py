@@ -83,6 +83,7 @@ def equipment_search():
     rows = conn.execute(
         f"SELECT * FROM equipment WHERE hostname LIKE '%{query}%' OR site LIKE '%{query}%'"
     ).fetchall()
+    
     conn.close()
     return jsonify([
         {"id": r[0], "hostname": r[1], "ip": r[2], "type": r[3], "site": r[4], "status": r[5]}
