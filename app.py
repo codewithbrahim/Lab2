@@ -72,6 +72,8 @@ def equipment_list():
     ])
 
 
+
+
 # VULN #1 — SQL Injection
 
 # Semgrep : python.lang.security.audit.formatted-sql-query
