@@ -2,6 +2,8 @@
 
 **Durée estimée : 1h30** &nbsp;|&nbsp; **Stack : Python / Flask** &nbsp;|&nbsp; **Outil : Semgrep**
 
+Pour ceux qui rencontre des problèmes avec leur env, possibilité d'aller sur : https://killercoda.com/playgrounds/scenario/ubuntu
+
 ---
 
 ## Contexte
