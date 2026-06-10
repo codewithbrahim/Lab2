@@ -73,6 +73,7 @@ def equipment_list():
 
 
 # VULN #1 — SQL Injection
+
 # Semgrep : python.lang.security.audit.formatted-sql-query
 @app.route("/api/v1/equipment/search")
 def equipment_search():
@@ -83,7 +84,6 @@ def equipment_search():
     rows = conn.execute(
         f"SELECT * FROM equipment WHERE hostname LIKE '%{query}%' OR site LIKE '%{query}%'"
     ).fetchall()
-    
     conn.close()
     return jsonify([
         {"id": r[0], "hostname": r[1], "ip": r[2], "type": r[3], "site": r[4], "status": r[5]}
