@@ -1,11 +1,11 @@
 name: " — Semgrep"
-#
-#on:
-#  # Scanner les pushs sur main
-#  push:
-#    branches:
-#      - main
-#
+
+on:
+  # Scanner les pushs sur main
+  push:
+    branches:
+      - main
+
 #jobs:
 #  semgrep:
 #    name: Analyse de sécurité
